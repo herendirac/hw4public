@@ -3,6 +3,19 @@ const app = express();
 app.engine('html', require('ejs').renderFile);
 app.use(express.static("public")); //access img, css, js files in public folder
 
+//faker info
+
+var faker = require('faker');
+
+var randomName = faker.name.findName();
+var randomEmail = faker.internet.email();
+var randomCard = faker.helpers.createCard();
+
+console.log(randomName, randomEmail, randomCard);
+
+
+
+
 //route
 app.get("/", function(req,res){
     // res.send(`<h1>it works!</h1>`);
