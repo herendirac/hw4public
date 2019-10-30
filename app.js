@@ -3,7 +3,8 @@ const app = express();
 app.engine('html', require('ejs').renderFile);
 app.use(express.static("public")); //access img, css, js files in public folder
 
-//faker info
+//faker info after install I used it to
+// get fake info for name,emails,cards.
 
 var faker = require('faker');
 
