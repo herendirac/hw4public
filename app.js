@@ -6,20 +6,15 @@ app.use(express.static("public")); //access img, css, js files in public folder
 //faker info after install I used it to
 // get fake info for name,emails,cards.
 
-var faker = require('faker');
-
-var randomName = faker.name.findName();
+const faker = require("faker");
 var randomEmail = faker.internet.email();
-var randomCard = faker.helpers.createCard();
 
-console.log(randomName, randomEmail, randomCard);
-  
 
 
 //route
 app.get("/", function(req,res){
     // res.send(`<h1>it works!</h1>`);
-    res.render("index.html");
+    res.render("index.html",{email:randomEmail});
 });
 
 app.get("/cplusplus", function(req,res){
