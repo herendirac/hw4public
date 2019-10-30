@@ -12,8 +12,7 @@ var randomEmail = faker.internet.email();
 var randomCard = faker.helpers.createCard();
 
 console.log(randomName, randomEmail, randomCard);
-
-
+  
 
 
 //route
