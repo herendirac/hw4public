@@ -14,7 +14,7 @@ var randomEmail = faker.internet.email();
 //route
 app.get("/", function(req,res){
     // res.send(`<h1>it works!</h1>`);
-    res.render("index.html",{email:randomEmail});
+    res.render("index.html",);
 });
 
 app.get("/cplusplus", function(req,res){
