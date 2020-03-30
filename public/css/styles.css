@@ -1,9 +1,30 @@
+#welcomeText
+{
+    color:white;
+}
+main
+{
+    display: flex;
+    justify-content:center;
+}
 body
 {
-    background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v627-aew-11-technologybackground_1.jpg?auto=format&bg=F4F4F3&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-1.1.0&mark=rawpixel-watermark.png&markalpha=90&markpad=13&markscale=10&markx=25&q=75&usm=15&vib=3&w=1200&s=a3c7a8aca6749225df8928467df34373");
+    background-image: url("https://images.assetsdelivery.com/compings_v2/roystudio/roystudio1509/roystudio150900186.jpg");
     text-align: center;
 }
-header,main,nav,footer
+header
+{
+    text-align:center;
+}
+main
+{
+    text-align:center;
+}
+nav
+{
+    text-align:center;
+}
+footer
 {
     text-align:center;
 }
@@ -14,15 +35,21 @@ h1
     margin-bottom:0px;
     color: yellow;
 }
-h2{
+h2
+{
+    color:yellow;
+}
+h5
+{
     color:red;
 }
-li{
-    color:pink;
+nav
+{
+    word-spacing:150px;
 }
-
-nav{
-    word-spacing:55px;
+nav .current
+{
+    background-color: yellow;
 }
 
 nav a
@@ -30,43 +57,29 @@ nav a
     padding:15px;
     padding-bottom:4px;
     font-size:1.8em;
-    text-decoration:none; /*removes undeline*/
-            
-         /*by default,links are blue*/
-            
 }
+
 nav a:hover 
 { /*pseudo class*/
-    border-bottom:2px orange solid;
+    border-bottom:2px orange solid; /*line under word*/
     font-size: 2em;
-    transition: .9s; /*transition effect*/
+  /*  transition: .9s; /*transition effect(make letters slowly bigger*/ 
 }
         /* code below is for the links*/
 a:link 
-{
-    background-color: yellow;
-}
-        
-a:visited 
 {
     background-color: cyan;
 }
         
 a:hover 
 {
-    background-color: lightgreen;
+    background-color: #ffc34d;
 }
-        
-a:active 
+strong
 {
-    background-color: hotpink;
-        } 
-#welcomeText
-{
-    color:white;
+    color:lightgreen;
 }
-main
+.container
 {
-    display: flex;
-    justify-content:center;
+    text-align: center;
 }
